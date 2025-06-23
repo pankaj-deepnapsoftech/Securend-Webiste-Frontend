@@ -101,7 +101,7 @@ const Landing = () => {
         <img
           src="/Images/Vector2.png"
           alt="Background"
-          className="absolute sm:h-[50%]  md:h-[90%] 2xl:h-[100%]   bottom-0 object-cover object-bottom-left z-0"
+          className="absolute sm:h-[50%]  md:h-[80%] 2xl:h-[100%]   bottom-0 object-cover object-bottom-left z-0"
         />
 
         {/* Left Side Content */}
