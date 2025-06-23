@@ -28,9 +28,7 @@ const Navbar = () => {
             Integration
           </Link>
 
-          <Link className='hover:text-white'>
-            Contacts
-          </Link>
+          <Link className='hover:text-white'>Contacts</Link>
 
           <Link to='#' className='hover:text-white'>
             Book a Demo

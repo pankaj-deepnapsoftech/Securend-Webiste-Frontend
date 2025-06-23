@@ -1,7 +1,6 @@
 'use client';
 
 import React from 'react';
-import { FaStar } from 'react-icons/fa';
 import { BsSearch } from 'react-icons/bs';
 import { AiOutlineFilter } from 'react-icons/ai';
 import { FiExternalLink } from 'react-icons/fi';
@@ -93,13 +92,13 @@ export default function IntegrationPage() {
       </section>
 
       <section className='px-4'>
-        <h2 className='text-4xl font-bold px-4 mb-8 ml-40 flex items-center gap-2 whitespace-nowrap'>
+        <h2 className='text-4xl font-bold px-4 mb-8 ml-120 flex items-center gap-2 whitespace-nowrap'>
           All Integrations
         </h2>
 
-        <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 px-4'>
+        <div className='bg-[#232537] grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 px-4'>
           <img
-            src='/Images/integration1.png'
+            src='/Images/integration9.png'
             alt='Integration 9'
             className='rounded-xl'
           />
@@ -109,17 +108,17 @@ export default function IntegrationPage() {
             className='rounded-xl'
           />
           <img
-            src='/Images/integration2.png'
+            src='/Images/integration11.png'
             alt='Integration 11'
             className='rounded-xl'
           />
           <img
-            src='/Images/integration3.png'
+            src='/Images/integration12.png'
             alt='Integration 12'
             className='rounded-xl'
           />
           <img
-            src='/Images/integration4.png'
+            src='/Images/integration13.png'
             alt='Integration 13'
             className='rounded-xl'
           />
@@ -149,12 +148,12 @@ export default function IntegrationPage() {
             className='rounded-xl'
           />
           <img
-            src='/Images/integration7.png'
+            src='/Images/integration19.png'
             alt='Integration 19'
             className='rounded-xl'
           />
           <img
-            src='/Images/integration8.png'
+            src='/Images/integration20.png'
             alt='Integration 20'
             className='rounded-xl'
           />
@@ -211,7 +210,6 @@ export default function IntegrationPage() {
         <p className='text-gray-400 text-sm max-w-lg mx-auto mb-6'>
           Don’t see the integration you need? Easily build custom connectors for
           your use case or reach out to our team.
-  
         </p>
         <div className='flex justify-center gap-4'>
           <button className='bg-gradient-to-r from-[#2859e4] to-[#3336ce] text-white font-medium px-6 py-2 rounded-md shadow hover:opacity-90 transition-all'>
@@ -225,5 +223,5 @@ export default function IntegrationPage() {
         </div>
       </section>
     </div>
-  );                                
+  );
 }

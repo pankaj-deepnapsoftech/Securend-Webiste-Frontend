@@ -114,21 +114,21 @@ const Landing = () => {
               Aggregation, integrated & Orchestrated risk management across all
               domains, providing a cohesive strategy to navigate this
               uncertainty.
-            </p>                                                      
+            </p>
             <button className='bg-gradient-to-r from-[#1a5eff] to-[#2151f4] hover:from-[#0039d3] hover:to-[#2642d1] px-8 py-3 rounded-xl text-white font-semibold shadow-lg transition duration-300'>
               Know More
             </button>
           </div>
         </div>
-        
+
         {/* Right Side - Dashboard Image */}
         <div className='w-1/2 flex items-center justify-center px-6 py-10 z-10'>
           <img
             src='/Images/Slider1.png'
             alt='Dashboard Preview'
-            className='w-full max-w-[750px] rounded-[30px] shadow-2xl object-contain' 
+            className='w-full max-w-[750px] rounded-[30px] shadow-2xl object-contain'
           />
-        </div>                 
+        </div>
       </section>
 
       {/* Features Section */}
@@ -315,9 +315,9 @@ const Landing = () => {
                 </button>
                 <label className='inline-flex items-center text-sm text-gray-400'>
                   <input
-                  type='checkbox'
-                  className='appearance-none bg-gradient-to-br from-gray-600 to-gray-900 border border-gray-600 rounded-sm w-4 h-4 mr-2 checked:bg-blue-600 focus:ring-2 focus:ring-offset-0 focus:ring-blue-500 align-middle'
-                />
+                    type='checkbox'
+                    className='appearance-none bg-gradient-to-br from-gray-600 to-gray-900 border border-gray-600 rounded-sm w-4 h-4 mr-2 checked:bg-blue-600 focus:ring-2 focus:ring-offset-0 focus:ring-blue-500 align-middle'
+                  />
                   <span>
                     By submitting this form, you agree to our{' '}
                     <a href='#' className='text-[#c9a0fc] underline'>
