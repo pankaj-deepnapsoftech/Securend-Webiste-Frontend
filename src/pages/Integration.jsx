@@ -211,7 +211,6 @@ export default function IntegrationPage() {
         <p className='text-gray-400 text-sm max-w-lg mx-auto mb-6'>
           Don’t see the integration you need? Easily build custom connectors for
           your use case or reach out to our team.
-  
         </p>
         <div className='flex justify-center gap-4'>
           <button className='bg-gradient-to-r from-[#2859e4] to-[#3336ce] text-white font-medium px-6 py-2 rounded-md shadow hover:opacity-90 transition-all'>
@@ -225,5 +224,5 @@ export default function IntegrationPage() {
         </div>
       </section>
     </div>
-  );                                
+  );
 }

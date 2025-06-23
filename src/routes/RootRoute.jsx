@@ -9,7 +9,7 @@ const RootRoute = () => {
     <Routes>
       <Route element={<Layout />}>
         <Route path='/' element={<Landing />} />
-        <Route path="/integration" element={<IntegrationPage/>}/>
+        <Route path='/integration' element={<IntegrationPage />} />
       </Route>
     </Routes>
   );
