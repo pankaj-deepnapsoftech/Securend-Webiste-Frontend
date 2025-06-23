@@ -1,6 +1,6 @@
 import React from 'react';
 import { FaChevronDown } from 'react-icons/fa';
-import { Link } from 'react-router-dom';
+import {  NavLink } from 'react-router-dom';
 
 const Navbar = () => {
   return (
@@ -13,26 +13,45 @@ const Navbar = () => {
 
         {/* Navigation Links */}
         <div className='hidden md:flex items-center space-x-8 ml-80 font-medium text-gray-400 text-base'>
-          <Link
+          <NavLink
             to='/'
-            className='relative text-white after:block after:h-[2px] after:bg-[#4c6fff] after:scale-x-100 after:transition-transform after:duration-300 after:origin-left'
+            className={({ isActive }) =>
+              `relative ${isActive ? 'text-white after:block after:h-[2px] after:bg-[#4c6fff] after:scale-x-100 after:transition-transform after:duration-300 after:origin-left' : 'text-gray-400 hover:text-white'}`
+            }
           >
             Home
-          </Link>
+          </NavLink>
 
           <button className='flex items-center gap-1 hover:text-white'>
             Platform <FaChevronDown className='text-xs' />
           </button>
 
-          <Link to='/integration' className='hover:text-white'>
+          <NavLink
+            to='/integration'
+            className={({ isActive }) =>
+              `relative ${isActive ? 'text-white after:block after:h-[2px] after:bg-[#4c6fff] after:scale-x-100 after:transition-transform after:duration-300 after:origin-left' : 'text-gray-400 hover:text-white'}`
+            }
+          >
             Integration
-          </Link>
+          </NavLink>
 
-          <Link className='hover:text-white'>Contacts</Link>
+          <NavLink
+            to='/contacts'
+            className={({ isActive }) =>
+              `relative ${isActive ? 'text-white after:block after:h-[2px] after:bg-[#4c6fff] after:scale-x-100 after:transition-transform after:duration-300 after:origin-left' : 'text-gray-400 hover:text-white'}`
+            }
+          >
+            Contacts
+          </NavLink>
 
-          <Link to='#' className='hover:text-white'>
+          <NavLink
+            to='/book-demo'
+            className={({ isActive }) =>
+              `relative ${isActive ? 'text-white after:block after:h-[2px] after:bg-[#4c6fff] after:scale-x-100 after:transition-transform after:duration-300 after:origin-left' : 'text-gray-400 hover:text-white'}`
+            }
+          >
             Book a Demo
-          </Link>
+          </NavLink>
         </div>
 
         {/* CTA Button */}
