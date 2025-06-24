@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { FaFacebookF, FaTwitter, FaYoutube } from 'react-icons/fa';
 
@@ -31,7 +32,7 @@ const features = [
 const Landing = () => {
   return (
     <div>
-      {/* Hero Section */}
+
       <div
         className='relative overflow-hidden py-20 px-6 md:px-20 text-white bg-[#22242f] bg-no-repeat bg-cover'
         style={{ backgroundImage: "url('/Images/Vector.png')" }}
@@ -47,9 +48,8 @@ const Landing = () => {
           className='absolute left-1 top-80 w-[450px] h-[300px] md:w-[700px]  pointer-events-none select-none'
         />
 
-        {/* Main Grid Content */}
+
         <div className='grid grid-cols-1 md:grid-cols-2 items-center relative z-10'>
-          {/* Left Side Text */}
           <div className='z-10 mb-20 space-y-6'>
             <h1 className='text-4xl md:text-5xl font-extrabold leading-tight'>
               AI Powered Risk <br /> Prioritization and <br /> Remediation
@@ -62,9 +62,13 @@ const Landing = () => {
               safeguard your business with actionable insights and automated
               solutions.
             </p>
-            <button className='bg-gradient-to-r from-[#1e6bfa] to-[#3a9aff] text-white py-3 px-6 rounded-lg shadow-md font-semibold hover:scale-105 transition'>
-              Get Started
+            <button className="relative  text-white font-semibold px-14 py-2.5 rounded-md overflow-hidden shadow-lg hover:shadow-xl transition duration-300">
+              <span className="absolute inset-0 bg-[linear-gradient(345deg,#225cd2_50%,#2B4A77_50%,#307bfe_100%)] opacity-100 transition-opacity duration-300 hover:opacity-90"></span>
+              <span className="relative z-10">Get Started</span>
             </button>
+
+
+
           </div>
 
           {/* Right Side: 3 Layered Images */}
@@ -115,8 +119,9 @@ const Landing = () => {
               domains, providing a cohesive strategy to navigate this
               uncertainty.
             </p>
-            <button className='bg-gradient-to-r from-[#1a5eff] to-[#2151f4] hover:from-[#0039d3] hover:to-[#2642d1] px-6 sm:px-8 py-3 rounded-xl text-white font-semibold shadow-lg transition duration-300'>
-              Know More
+            <button className="relative  text-white font-semibold px-10 py-3 rounded-md overflow-hidden shadow-lg hover:shadow-xl transition duration-300">
+              <span className="absolute inset-0 bg-[linear-gradient(343deg,#225cd2_50%,#2B4A77_50%,#307bfe_100%)] opacity-100 transition-opacity duration-300 hover:opacity-90"></span>
+              <span className="relative z-10">Know More</span>
             </button>
           </div>
         </div>
@@ -307,11 +312,9 @@ const Landing = () => {
               ></textarea>
 
               <div className='flex items-center gap-4'>
-                <button
-                  type='submit'
-                  className='px-6 py-3 rounded-md text-white font-semibold bg-gradient-to-br from-[#4259f2] to-[#2b3ce2] shadow-xl hover:scale-105 transition-transform'
-                >
-                  Submit Request
+                <button className="relative  text-white font-semibold px-6 py-3 rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition duration-300">
+                  <span className="absolute inset-0 bg-[linear-gradient(343deg,#225cd2_50%,#2B4A77_50%,#307bfe_100%)] opacity-100 transition-opacity duration-300 hover:opacity-90"></span>
+                  <span className="relative z-10">Submit Request</span>
                 </button>
                 <label className='inline-flex items-center text-sm text-gray-400'>
                   <input
@@ -351,23 +354,29 @@ const Landing = () => {
             <hr className='border-gray-700 my-6' />
             <div className='flex space-x-4'>
               <a
-                href='#'
-                className='w-10 h-10 bg-gradient-to-br from-blue-600 to-blue-800 rounded-full flex items-center justify-center hover:scale-110 transition-transform'
+                href="#"
+                className="relative flex items-center justify-center text-white font-semibold w-12 h-12 rounded-full overflow-hidden shadow-lg hover:shadow-xl transition duration-300"
               >
-                <FaFacebookF />
+                <span className="absolute inset-0 bg-[linear-gradient(305deg,#225cd2_50%,#2B4A77_50%,#307bfe_100%)] opacity-100 transition-opacity duration-300 hover:opacity-90"></span>
+                <span className="relative z-10"><FaFacebookF /></span>
+              </a>
+
+
+              <a
+                href="#"
+                className="relative flex items-center justify-center text-white font-semibold w-12 h-12 rounded-full overflow-hidden shadow-lg hover:shadow-xl transition duration-300"
+              >
+                <span className="absolute inset-0 bg-[linear-gradient(305deg,#225cd2_50%,#2B4A77_50%,#307bfe_100%)] opacity-100 transition-opacity duration-300 hover:opacity-90"></span>
+                <span className="relative z-10"><FaTwitter /></span>
               </a>
               <a
-                href='#'
-                className='w-10 h-10 bg-gradient-to-br from-blue-500 to-blue-700 rounded-full flex items-center justify-center hover:scale-110 transition-transform'
+                href="#"
+                className="relative flex items-center justify-center text-white font-semibold w-12 h-12 rounded-full overflow-hidden shadow-lg hover:shadow-xl transition duration-300"
               >
-                <FaTwitter />
+                <span className="absolute inset-0 bg-[linear-gradient(305deg,#225cd2_50%,#2B4A77_50%,#307bfe_100%)] opacity-100 transition-opacity duration-300 hover:opacity-90"></span>
+                <span className="relative z-10"><FaYoutube /></span>
               </a>
-              <a
-                href='#'
-                className='w-10 h-10 bg-gradient-to-br from-blue-500 to-blue-800 rounded-full flex items-center justify-center hover:scale-110 transition-transform'
-              >
-                <FaYoutube />
-              </a>
+              
             </div>
           </div>
         </div>

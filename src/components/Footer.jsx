@@ -74,29 +74,28 @@ const Footer = () => {
         {/* Column 5: Social */}
         <div>
           <h4 className='text-gray-200 font-medium mb-3'>Social</h4>
-          <div className='flex space-x-4 mt-2'>
-            {/* Facebook */}
+          <div className='flex space-x-4'>
             <a
-              href='#'
-              className='w-10 h-10 rounded-full flex items-center justify-center hover:scale-110 transition-transform bg-gradient-to-br from-blue-600 to-blue-800 duration-300'
+              href="#"
+              className="relative flex items-center justify-center text-white font-semibold w-10 h-10 rounded-full overflow-hidden shadow-lg hover:shadow-xl transition duration-300"
             >
-              <FaFacebookF className='text-gray-200 text-base' />
+              <span className="absolute inset-0 bg-[linear-gradient(305deg,#225cd2_50%,#2B4A77_50%,#307bfe_100%)] opacity-100 transition-opacity duration-300 hover:opacity-90"></span>
+              <span className="relative z-10"><FaFacebookF /></span>
             </a>
 
-            {/* Twitter */}
             <a
-              href='#'
-              className='w-10 h-10 rounded-full flex items-center justify-center hover:scale-110 transition-transform bg-gradient-to-br from-blue-600 to-blue-800 duration-300'
+              href="#"
+              className="relative flex items-center justify-center text-white font-semibold w-10 h-10 rounded-full overflow-hidden shadow-lg hover:shadow-xl transition duration-300"
             >
-              <FaTwitter className='text-gray-200 text-base' />
+              <span className="absolute inset-0 bg-[linear-gradient(305deg,#225cd2_50%,#2B4A77_50%,#307bfe_100%)] opacity-100 transition-opacity duration-300 hover:opacity-90"></span>
+              <span className="relative z-10"><FaTwitter /></span>
             </a>
-
-            {/* YouTube */}
             <a
-              href='#'
-              className='w-10 h-10 rounded-full flex items-center justify-center hover:scale-110 transition-transform bg-gradient-to-br from-blue-600 to-blue-800 duration-300'
+              href="#"
+              className="relative flex items-center justify-center text-white font-semibold w-10 h-10 rounded-full overflow-hidden shadow-lg hover:shadow-xl transition duration-300"
             >
-              <FaYoutube className='text-gray-200 text-base' />
+              <span className="absolute inset-0 bg-[linear-gradient(305deg,#225cd2_50%,#2B4A77_50%,#307bfe_100%)] opacity-100 transition-opacity duration-300 hover:opacity-90"></span>
+              <span className="relative z-10"><FaYoutube /></span>
             </a>
           </div>
         </div>

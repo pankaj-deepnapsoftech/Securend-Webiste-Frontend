@@ -1,11 +1,13 @@
+
 import React from 'react';
 import { FaChevronDown } from 'react-icons/fa';
 import { NavLink } from 'react-router-dom';
 
 const Navbar = () => {
+
   return (
     <nav className='bg-[#252729] text-white px-6 md:px-12 py-4 shadow-sm'>
-      <div className='max-w-screen-xl mx-auto flex items-center justify-between'>
+      <div className='max-w-screen-xl mx-auto whitespace-nowrap gap-4 flex items-center justify-between'>
         {/* Logo */}
         <div className='flex items-center gap-2'>
           <img src='/Logo/securend.png' alt='SecureEnd Logo' className='h-7' />
@@ -55,8 +57,9 @@ const Navbar = () => {
         </div>
 
         {/* CTA Button */}
-        <button className='ml-6 bg-gradient-to-br from-[#4c6fff] to-[#3f49ff] hover:opacity-90 text-white px-5 py-2 rounded-lg font-semibold shadow-md'>
-          Get Started
+        <button className="relative  text-white font-semibold px-5 py-2 rounded-md overflow-hidden shadow-lg hover:shadow-xl transition duration-300">
+          <span className="absolute inset-0 bg-[linear-gradient(343deg,#225cd2_50%,#2B4A77_50%,#307bfe_100%)] opacity-100 transition-opacity duration-300 hover:opacity-90"></span>
+          <span className="relative z-10">Get Started</span>
         </button>
       </div>
     </nav>
