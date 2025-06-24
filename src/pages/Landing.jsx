@@ -96,40 +96,40 @@ const Landing = () => {
       </div>
 
       {/* Sliders Section */}
-      <section className="relative flex flex-col md:flex-row min-h-[70vh] w-full bg-[#0F0F1A] text-white overflow-hidden">
+      <section className='relative flex flex-col md:flex-row min-h-[70vh] w-full bg-[#0F0F1A] text-white overflow-hidden'>
         {/* Background Image (Vector) */}
         <img
-          src="/Images/Vector2.png"
-          alt="Background"
-          className="absolute sm:h-[50%]  md:h-[80%] 2xl:h-[100%]   bottom-0 object-cover object-bottom-left z-0"
+          src='/Images/Vector2.png'
+          alt='Background'
+          className='absolute sm:h-[50%]  md:h-[80%] 2xl:h-[100%]   bottom-0 object-cover object-bottom-left z-0'
         />
 
         {/* Left Side Content */}
-        <div className="w-full md:w-1/2 relative z-10 flex items-center px-6 md:px-12 py-12 md:py-20 text-center md:text-left">
-          <div className="max-w-[520px] mx-auto">
-            <h1 className="text-3xl sm:text-4xl md:text-5xl 2xl:text-4xl font-extrabold mb-4 leading-tight">
+        <div className='w-full md:w-1/2 relative z-10 flex items-center px-6 md:px-12 py-12 md:py-20 text-center md:text-left'>
+          <div className='max-w-[520px] mx-auto'>
+            <h1 className='text-3xl sm:text-4xl md:text-5xl 2xl:text-4xl font-extrabold mb-4 leading-tight'>
               Risk Operations Centre:
             </h1>
-            <p className="text-base sm:text-lg text-[#d6d4ce] mb-6 leading-relaxed">
+            <p className='text-base sm:text-lg text-[#d6d4ce] mb-6 leading-relaxed'>
               Aggregation, integrated & Orchestrated risk management across all
-              domains, providing a cohesive strategy to navigate this uncertainty.
+              domains, providing a cohesive strategy to navigate this
+              uncertainty.
             </p>
-            <button className="bg-gradient-to-r from-[#1a5eff] to-[#2151f4] hover:from-[#0039d3] hover:to-[#2642d1] px-6 sm:px-8 py-3 rounded-xl text-white font-semibold shadow-lg transition duration-300">
+            <button className='bg-gradient-to-r from-[#1a5eff] to-[#2151f4] hover:from-[#0039d3] hover:to-[#2642d1] px-6 sm:px-8 py-3 rounded-xl text-white font-semibold shadow-lg transition duration-300'>
               Know More
             </button>
           </div>
         </div>
 
         {/* Right Side - Dashboard Image */}
-        <div className="w-full md:w-1/2 flex items-center justify-center px-6 py-10 z-10">
+        <div className='w-full md:w-1/2 flex items-center justify-center px-6 py-10 z-10'>
           <img
-            src="/Images/Slider1.png"
-            alt="Dashboard Preview"
-            className="w-full max-w-[90%] md:max-w-[850px] rounded-[20px] md:rounded-[30px] shadow-2xl object-contain"
+            src='/Images/Slider1.png'
+            alt='Dashboard Preview'
+            className='w-full max-w-[90%] md:max-w-[850px] rounded-[20px] md:rounded-[30px] shadow-2xl object-contain'
           />
         </div>
       </section>
-
 
       {/* Features Section */}
       <section className='relative bg-gradient-to-r from-[#22242f] via-[#252643] to-[#21232c] text-gray-300 font-light py-20 h-screen overflow-hidden'>
@@ -178,7 +178,7 @@ const Landing = () => {
               <div className='bg-gradient-to-br from-[#252b45] to-[#2b324d] p-4 rounded-2xl border border-gray-700 shadow-md hover:shadow-xl transition-all duration-300 h-[280px] flex flex-col'>
                 <div className='w-12 h-12 rounded-md flex items-center justify-center text-white mb-3'>
                   <img
-                    src='/Icons/icon1.png'
+                    src='/Icons/icon1.png'   
                     alt='Icon 1'
                     className='w-10 h-10'
                   />
