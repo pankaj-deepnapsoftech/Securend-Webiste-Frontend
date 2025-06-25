@@ -13,7 +13,7 @@ const RootRoute = () => {
         <Route path='/' element={<Landing />} />
         <Route path='/integration' element={<IntegrationPage />} />
         <Route path='/tvm-page' element={<ThreatVulnerabilitySection />} />
-        <Route path="/roc" element={<RiskOperationsSection/>}/>
+        <Route path='/roc' element={<RiskOperationsSection />} />
       </Route>
     </Routes>
   );

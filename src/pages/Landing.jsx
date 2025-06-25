@@ -101,7 +101,7 @@ const Landing = () => {
           alt='Background'
           className='absolute sm:h-[50%] md:h-[80%] 2xl:h-[100%] bottom-0 object-cover object-bottom-left z-0'
         />
-    
+
         {/* Left Side Content */}
         <div className='w-full md:w-1/2 relative z-10 flex items-center px-6 md:px-12 py-12 md:py-20 text-center md:text-left'>
           <div className='max-w-[520px] mx-auto'>

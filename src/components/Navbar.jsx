@@ -32,10 +32,12 @@ const Navbar = () => {
               Platform <FaChevronDown className='text-xs' />
             </button>
 
-            <div className='absolute top-full left-0 font-medium mt-2 bg-[#212325] text-gray-400 rounded-xl w-60 border border-gray-500 py-2 px-4 shadow-lg z-50 space-y-2
+            <div
+              className='absolute top-full left-0 font-medium mt-2 bg-[#212325] text-gray-400 rounded-xl w-60 border border-gray-500 py-2 px-4 shadow-lg z-50 space-y-2
               opacity-0 invisible group-hover:visible group-hover:opacity-100 
               transition-all duration-300 transform -translate-y-2 group-hover:translate-y-0
-            '>
+            '
+            >
               <NavLink
                 to='/roc'
                 className='block cursor-pointer hover:text-white transition-colors duration-200 break-words whitespace-normal'

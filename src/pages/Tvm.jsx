@@ -162,11 +162,12 @@ export default function ThreatVulnerabilitySection() {
         </div>
       </section>
 
-      <div className='relative bg-gradient-to-r from-[#272753] to-[#21232a] py-0 px-4 md:px-10 overflow-hidden'>
+      <div className='relative flex justify-center bg-gradient-to-r from-[#272753] to-[#21232a] py-0 px-4 md:px-10 overflow-hidden'>
         {/* Process Steps */}
-        <div className='relative z-10 flex flex-col gap-20'>
+        <div className='relative z-10 flex flex-col '>
           {processSteps.map((step) => (
-            <div
+          <div className='flex flex-col items-center'>
+              <div
               key={step.id}
               className={`flex items-center justify-${step.align === 'left' ? 'start' : 'end'} relative`}
             >
@@ -185,7 +186,7 @@ export default function ThreatVulnerabilitySection() {
                   <img
                     src={step.card}
                     alt={`card-${step.id}`}
-                    className='max-w-[360px] md:max-w-[400px]'
+                    className='max-w-[360px] md:max-w-[400px]'   
                   />
                 </>
               )}
@@ -209,6 +210,8 @@ export default function ThreatVulnerabilitySection() {
                 </>
               )}
             </div>
+            { <img className='object-cover' src="/Icons/line.png" alt="" />}
+          </div>
           ))}
         </div>
       </div>

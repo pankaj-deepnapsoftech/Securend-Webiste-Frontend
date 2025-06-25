@@ -32,10 +32,10 @@ const RiskOperationsSection = () => {
         </div>
       </section>
 
-      <section className='relative h-[400px] bg-gradient-to-r from-[#272844] via-[#282a56] to-[#27252b] text-white px-4 md:px-10 overflow-hidden'>
+      <section className='relative min-h-[1000px] bg-gradient-to-r from-[#272844] via-[#282a56] to-[#27252b] text-white px-4 md:px-10 overflow-visible'>
         <div className='text-center px-4 py-10'>
           <div className='flex items-center justify-center gap-2 mb-5 text-white text-2xl md:text-3xl font-bold'>
-            <img src='/Icons/icon13.png' />
+            <img src='/Icons/icon13.png' alt='Icon' />
             <span>Proactive to Reactive Security Model</span>
           </div>
           <p className='text-gray-300 text-sm md:text-base'>
@@ -43,6 +43,122 @@ const RiskOperationsSection = () => {
             risk management
           </p>
         </div>
+
+        <section className='relative border border-gray-700 ml-24 rounded-2xl w-[1000px] content-center bg-[#232842] text-white py-20 px-4'>
+          <div className='text-center mb-6'>
+            <h2 className='text-2xl md:text-4xl font-bold text-white mb-2'>
+              Risk Operations Center
+            </h2>
+            <p className='text-sm md:text-base text-white/70'>
+              A new approach to managing exposures pre-attack
+            </p>
+          </div>
+
+          <div className='max-w-7xl mx-auto flex flex-col md:flex-row justify-center items-start relative'>
+            {/* Left (Green) Side */}
+            <div className='flex-1 flex flex-col items-center relative z-10'>
+              <img
+                src='/Images/green1.png'
+                alt='ROC Icon'
+                className='mb-6 w-12 h-12'
+              />
+              <img
+                src='/Images/green2.png'
+                alt='Risk Operations Center'
+                className='mb-8'
+              />
+              <img
+                src='/Images/green3.png'
+                alt='Risk-Based Prioritization'
+                className='mb-2'
+              />
+              <img
+                src='/Icons/greenarrow1.png'
+                alt='Arrow Down 1'
+                className='mb-2'
+              />
+              <img
+                src='/Images/green4.png'
+                alt='Indicators of Exposure'
+                className='mb-2'
+              />
+              <img
+                src='/Icons/greenarrow2.png'
+                alt='Green Side Arrow'
+                className='mb-2'
+              />
+            </div>
+
+            {/* Middle Dotted Line */}
+            <div className='hidden md:block relative z-0 mx-8'>
+              <img
+                src='/Icons/dotted.png'
+                alt='Dotted Divider'
+                className='h-[70%] object-cover'
+              />
+            </div>
+
+            {/* Right (Blue) Side */}
+            <div className='flex-1 flex flex-col items-center relative z-10'>
+              <img
+                src='/Images/blue1.png'
+                alt='SOC Icon'
+                className='mb-6 w-12 h-12'
+              />
+              <img
+                src='/Images/blue2.png'
+                alt='Security Operations Center'
+                className='mb-8'
+              />
+              <img
+                src='/Images/blue3.png'
+                alt='Threat Detection'
+                className='mb-2'
+              />
+              <img
+                src='/Icons/greenarrow1.png'
+                alt='Arrow Down 1'
+                className='mb-2'
+              />
+              <img
+                src='/Images/blue4.png'
+                alt='Indicators of Compromise'
+                className='mb-2'
+              />
+              <img
+                src='/Icons/greenarrow2.png'
+                alt='Arrow Down 1'
+                className='mb-2'
+              />
+            </div>
+          </div>
+
+          <div className='relative -top-16 '>  
+            <img src='/Images/proactive.png'/>
+          </div>
+
+          {/* Footer Legend */}
+          <div className='flex justify-center items-center gap-10'>
+            <div className='flex items-center gap-2'>
+              <img
+                src='/Icons/greenarrow.png'
+                alt='Proactive'
+                className='w-3 h-3'
+              />
+              <span className='text-sm text-green-600'>
+                Proactive Prevention
+              </span>
+            </div>
+            <div className='flex items-center gap-2'>
+              <img
+                src='/Icons/bluearrow.png'
+                alt='Reactive'
+                className='w-3 h-3 transform rotate-180'
+              />
+              <span className='text-sm text-sky-600'>Reactive Detection</span>
+            </div>
+          </div>
+        </section>
       </section>
 
       <section className='bg-gradient-to-r from-[#272750] to-[#212325] py-16 px-4'>
@@ -60,7 +176,7 @@ const RiskOperationsSection = () => {
         </div>
       </section>
 
-      <section className='relative h-[400px] bg-gradient-to-r from-[#272844] via-[#282a56] to-[#27252b] text-white px-4 md:px-10 overflow-hidden'>
+      <section className='relative bg-gradient-to-r from-[#272844] via-[#282a56] to-[#27252b] text-white px-4 md:px-10 overflow-hidden'>
         <div className='text-center px-4 py-10'>
           <div className='flex items-center justify-center gap-2 mb-5 text-white text-2xl md:text-3xl font-bold'>
             <img src='/Icons/icon14.png' />
@@ -69,6 +185,9 @@ const RiskOperationsSection = () => {
           <p className='text-gray-300 text-sm md:text-base'>
             AI Powered & Human Consulted Remediation to Zero Down Your Risk
           </p>
+        </div>
+        <div>
+          <img src='/Images/rocdiagraam.png'/>
         </div>
       </section>
 
@@ -103,12 +222,12 @@ const RiskOperationsSection = () => {
       </section>
 
       <div className='flex bg-gradient-to-r from-[#24263e] to-[#212326] justify-center'>
-          <img
-            src='/Images/roclast.png'
-            alt='Modern Solutions TVM'
-            className='mx-8 my-12 max-w-6xl rounded-xl shadow-lg'
-          />
-        </div>
+        <img
+          src='/Images/roclast.png'
+          alt='Modern Solutions TVM'
+          className='mx-8 my-12 max-w-6xl rounded-xl shadow-lg'
+        />
+      </div>
     </div>
   );
 };
