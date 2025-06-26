@@ -5,17 +5,17 @@ const Footer = () => {
   return (
     <footer className='min-h-[40vh] bg-gradient-to-r from-[#22242f] via-[#252643] to-[#21232c] text-gray-300 font-light'>
       {/* Main Grid */}
-      <div className='max-w-screen-xl mx-auto px-6 py-12 grid grid-cols-1 md:grid-cols-6 gap-10'>
+      <div className='max-w-screen-xl mx-auto px-6 py-12 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-8'>
         {/* Column 1: Logo + Tagline */}
         <div className='md:col-span-2'>
           <div className='flex items-center mb-4'>
             <img
               src='/Logo/securend.png'
-              alt='Secure& Logo'
+              alt='SecureEnd Logo'
               className='h-10 mr-2'
             />
           </div>
-          <p className='text-sm leading-[1.8] max-w-xs mt-2 overflow-hidden line-clamp-3'>
+          <p className='text-sm leading-relaxed max-w-xs'>
             Beyond Security: A Strategic Approach to turning protection into
             progress, risk into resilience, and defense into opportunity.
           </p>
@@ -72,9 +72,10 @@ const Footer = () => {
         </div>
 
         {/* Column 5: Social */}
-        <div>
+        <div className='sm:col-span-2 md:col-span-1'>
           <h4 className='text-gray-200 font-medium mb-3'>Social</h4>
           <div className='flex space-x-4'>
+            {/* Facebook */}
             <a
               href='#'
               className='relative flex items-center justify-center text-white font-semibold w-10 h-10 rounded-full overflow-hidden shadow-lg hover:shadow-xl transition duration-300'
@@ -85,6 +86,7 @@ const Footer = () => {
               </span>
             </a>
 
+            {/* Twitter */}
             <a
               href='#'
               className='relative flex items-center justify-center text-white font-semibold w-10 h-10 rounded-full overflow-hidden shadow-lg hover:shadow-xl transition duration-300'
@@ -94,6 +96,8 @@ const Footer = () => {
                 <FaTwitter />
               </span>
             </a>
+
+            {/* YouTube */}
             <a
               href='#'
               className='relative flex items-center justify-center text-white font-semibold w-10 h-10 rounded-full overflow-hidden shadow-lg hover:shadow-xl transition duration-300'
@@ -108,20 +112,20 @@ const Footer = () => {
       </div>
 
       {/* Bottom Bar */}
-      <div className='flex justify-center border-t border-gray-700'>
-        <div className='w-full max-w-screen-xl px-6 py-4 flex flex-col md:flex-row justify-between items-center text-sm text-gray-100'>
-          <p className='text-center md:text-left'>
+      <div className='border-t border-gray-700'>
+        <div className='w-full max-w-screen-xl mx-auto px-6 py-4 flex flex-col sm:flex-row justify-between items-center text-sm text-gray-100 space-y-2 sm:space-y-0'>
+          <p className='text-center sm:text-left'>
             © 2025 Secure& ~ All rights Reserved
           </p>
-          <p className='mt-2 md:mt-0 text-gray-300 text-center md:text-right'>
+          <div className='text-center sm:text-right space-x-2'>
             <a href='#' className='hover:text-gray-200'>
               Privacy Policy
-            </a>{' '}
-            |{' '}
+            </a>
+            |
             <a href='#' className='hover:text-gray-200'>
               Terms and Conditions
             </a>
-          </p>
+          </div>
         </div>
       </div>
     </footer>
