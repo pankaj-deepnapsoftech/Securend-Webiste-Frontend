@@ -118,7 +118,7 @@ export default function ThreatVulnerabilitySection() {
             A comprehensive 8-step process for continuous threat and
             vulnerability management
           </p>
-        </div> 
+        </div>
 
         <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 max-w-7xl w-full px-4'>
           {cardImages.map((img, idx) => (
@@ -169,7 +169,6 @@ export default function ThreatVulnerabilitySection() {
               <div
                 className={`flex items-center justify-center flex-nowrap gap-2 md:gap-4 w-full max-w-[95%] mx-auto`}
               >
-                {/* Always left-to-right line: Circle → Arrow → Card or Card → Arrow → Circle */}
                 {step.align === 'left' ? (
                   <>
                     <img
@@ -209,7 +208,6 @@ export default function ThreatVulnerabilitySection() {
                 )}
               </div>
 
-              {/* line.png stays untouched */}
               <img src='/Icons/line.png' alt='' />
             </div>
           ))}

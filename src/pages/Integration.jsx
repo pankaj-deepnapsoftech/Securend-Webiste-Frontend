@@ -25,19 +25,55 @@ export default function IntegrationPage() {
 
       <section>
         <h2 className='text-2xl sm:text-4xl font-bold px-2 sm:px-4 mt-10 sm:mt-20 mb-6 sm:mb-8 flex items-center gap-2'>
-          <img src='/Images/Vector3.png' alt='Star Icon' className='w-5 h-5 sm:w-6 sm:h-6' />
+          <img
+            src='/Images/Vector3.png'
+            alt='Star Icon'
+            className='w-5 h-5 sm:w-6 sm:h-6'
+          />
           Popular Integrations
         </h2>
 
         <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6 px-2 sm:px-4'>
-          <img src='/Images/integration1.png' alt='Integration 1' className='rounded-xl w-full h-auto' />
-          <img src='/Images/integration2.png' alt='Integration 2' className='rounded-xl w-full h-auto' />
-          <img src='/Images/integration3.png' alt='Integration 3' className='rounded-xl w-full h-auto' />
-          <img src='/Images/integration4.png' alt='Integration 4' className='rounded-xl w-full h-auto' />
-          <img src='/Images/integration5.png' alt='Integration 5' className='rounded-xl w-full h-auto' />
-          <img src='/Images/integration6.png' alt='Integration 6' className='rounded-xl w-full h-auto' />
-          <img src='/Images/integration7.png' alt='Integration 7' className='rounded-xl w-full h-auto' />
-          <img src='/Images/integration8.png' alt='Integration 8' className='rounded-xl w-full h-auto' />
+          <img
+            src='/Images/integration1.png'
+            alt='Integration 1'
+            className='rounded-xl w-full h-auto'
+          />
+          <img
+            src='/Images/integration2.png'
+            alt='Integration 2'
+            className='rounded-xl w-full h-auto'
+          />
+          <img
+            src='/Images/integration3.png'
+            alt='Integration 3'
+            className='rounded-xl w-full h-auto'
+          />
+          <img
+            src='/Images/integration4.png'
+            alt='Integration 4'
+            className='rounded-xl w-full h-auto'
+          />
+          <img
+            src='/Images/integration5.png'
+            alt='Integration 5'
+            className='rounded-xl w-full h-auto'
+          />
+          <img
+            src='/Images/integration6.png'
+            alt='Integration 6'
+            className='rounded-xl w-full h-auto'
+          />
+          <img
+            src='/Images/integration7.png'
+            alt='Integration 7'
+            className='rounded-xl w-full h-auto'
+          />
+          <img
+            src='/Images/integration8.png'
+            alt='Integration 8'
+            className='rounded-xl w-full h-auto'
+          />
         </div>
       </section>
 
@@ -70,32 +106,118 @@ export default function IntegrationPage() {
         </h2>
 
         <div className='bg-[#232537] grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6 px-2 sm:px-4 py-4'>
-          <img src='/Images/integration9.png' alt='Integration 9' className='rounded-xl w-full h-auto' />
-          <img src='/Images/integration10.png' alt='Integration 10' className='rounded-xl w-full h-auto' />
-          <img src='/Images/integration11.png' alt='Integration 11' className='rounded-xl w-full h-auto' />
-          <img src='/Images/integration12.png' alt='Integration 12' className='rounded-xl w-full h-auto' />
-          <img src='/Images/integration13.png' alt='Integration 13' className='rounded-xl w-full h-auto' />
-          <img src='/Images/integration14.png' alt='Integration 14' className='rounded-xl w-full h-auto' />
-          <img src='/Images/integration15.png' alt='Integration 15' className='rounded-xl w-full h-auto' />
-          <img src='/Images/integration16.png' alt='Integration 16' className='rounded-xl w-full h-auto' />
-          <img src='/Images/integration17.png' alt='Integration 17' className='rounded-xl w-full h-auto' />
-          <img src='/Images/integration18.png' alt='Integration 18' className='rounded-xl w-full h-auto' />
-          <img src='/Images/integration19.png' alt='Integration 19' className='rounded-xl w-full h-auto' />
-          <img src='/Images/integration20.png' alt='Integration 20' className='rounded-xl w-full h-auto' />
-          <img src='/Images/integration21.png' alt='Integration 21' className='rounded-xl w-full h-auto' />
-          <img src='/Images/integration22.png' alt='Integration 22' className='rounded-xl w-full h-auto' />
-          <img src='/Images/integration23.png' alt='Integration 23' className='rounded-xl w-full h-auto' />
-          <img src='/Images/integration24.png' alt='Integration 24' className='rounded-xl w-full h-auto' />
-          <img src='/Images/integration25.png' alt='Integration 25' className='rounded-xl w-full h-auto' />
-          <img src='/Images/integration26.png' alt='Integration 26' className='rounded-xl w-full h-auto' />
-          <img src='/Images/integration27.png' alt='Integration 27' className='rounded-xl w-full h-auto' />
-          <img src='/Images/integration28.png' alt='Integration 28' className='rounded-xl w-full h-auto' />
+          <img
+            src='/Images/integration9.png'
+            alt='Integration 9'
+            className='rounded-xl w-full h-auto'
+          />
+          <img
+            src='/Images/integration10.png'
+            alt='Integration 10'
+            className='rounded-xl w-full h-auto'
+          />
+          <img
+            src='/Images/integration11.png'
+            alt='Integration 11'
+            className='rounded-xl w-full h-auto'
+          />
+          <img
+            src='/Images/integration12.png'
+            alt='Integration 12'
+            className='rounded-xl w-full h-auto'
+          />
+          <img
+            src='/Images/integration13.png'
+            alt='Integration 13'
+            className='rounded-xl w-full h-auto'
+          />
+          <img
+            src='/Images/integration14.png'
+            alt='Integration 14'
+            className='rounded-xl w-full h-auto'
+          />
+          <img
+            src='/Images/integration15.png'
+            alt='Integration 15'
+            className='rounded-xl w-full h-auto'
+          />
+          <img
+            src='/Images/integration16.png'
+            alt='Integration 16'
+            className='rounded-xl w-full h-auto'
+          />
+          <img
+            src='/Images/integration17.png'
+            alt='Integration 17'
+            className='rounded-xl w-full h-auto'
+          />
+          <img
+            src='/Images/integration18.png'
+            alt='Integration 18'
+            className='rounded-xl w-full h-auto'
+          />
+          <img
+            src='/Images/integration19.png'
+            alt='Integration 19'
+            className='rounded-xl w-full h-auto'
+          />
+          <img
+            src='/Images/integration20.png'
+            alt='Integration 20'
+            className='rounded-xl w-full h-auto'
+          />
+          <img
+            src='/Images/integration21.png'
+            alt='Integration 21'
+            className='rounded-xl w-full h-auto'
+          />
+          <img
+            src='/Images/integration22.png'
+            alt='Integration 22'
+            className='rounded-xl w-full h-auto'
+          />
+          <img
+            src='/Images/integration23.png'
+            alt='Integration 23'
+            className='rounded-xl w-full h-auto'
+          />
+          <img
+            src='/Images/integration24.png'
+            alt='Integration 24'
+            className='rounded-xl w-full h-auto'
+          />
+          <img
+            src='/Images/integration25.png'
+            alt='Integration 25'
+            className='rounded-xl w-full h-auto'
+          />
+          <img
+            src='/Images/integration26.png'
+            alt='Integration 26'
+            className='rounded-xl w-full h-auto'
+          />
+          <img
+            src='/Images/integration27.png'
+            alt='Integration 27'
+            className='rounded-xl w-full h-auto'
+          />
+          <img
+            src='/Images/integration28.png'
+            alt='Integration 28'
+            className='rounded-xl w-full h-auto'
+          />
         </div>
       </section>
 
       <section className='mt-14 sm:mt-20 bg-gradient-to-r from-[#252d73] to-[#272a62] rounded-xl py-8 sm:py-10 text-center max-w-4xl mx-auto px-4'>
-        <img src='/Icons/icon8.png' alt='custom integration' className='mx-auto mb-3 w-10 h-10 sm:w-12 sm:h-12' />
-        <h3 className='text-lg sm:text-xl font-bold mb-2'>Need a Custom Integration?</h3>
+        <img
+          src='/Icons/icon8.png'
+          alt='custom integration'
+          className='mx-auto mb-3 w-10 h-10 sm:w-12 sm:h-12'
+        />
+        <h3 className='text-lg sm:text-xl font-bold mb-2'>
+          Need a Custom Integration?
+        </h3>
         <p className='text-gray-400 text-sm sm:text-base max-w-lg mx-auto mb-5 sm:mb-6'>
           Don’t see the integration you need? Easily build custom connectors for
           your use case or reach out to our team.
