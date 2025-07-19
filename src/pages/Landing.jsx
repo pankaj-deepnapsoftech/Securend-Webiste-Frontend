@@ -1,5 +1,6 @@
 import React, { useEffect } from 'react';
 import { FaLinkedinIn, FaTwitter } from 'react-icons/fa';
+import { SiX } from 'react-icons/si';
 import { useLocation } from 'react-router-dom';
 
 const Landing = () => {
@@ -46,34 +47,38 @@ const Landing = () => {
   return (
     <div>
       <div
-        className='relative overflow-hidden py-16 px-4 sm:px-6 md:px-20 text-white bg-[#22242f] bg-no-repeat bg-cover'
+        className='relative overflow-hidden px-4 sm:px-6 md:px-20 text-white bg-[#22242f] bg-no-repeat bg-cover'
         style={{ backgroundImage: "url('/Images/Vector.png')" }}
       >
         {/* Decorative Circles */}
         <img
           src='/Images/circle1.png'
-          className='absolute top-5 left-40 md:left-80 w-20 sm:w-auto'
+          className='absolute top-5 left-20 md:left-80 w-auto max-w-[80px] sm:max-w-none'
+          alt='circle1'
         />
         <img
           src='/Images/circle2.png'
-          className='absolute top-14 left-24 md:left-50 w-20 sm:w-auto'
+          className='absolute top-14 left-10 md:left-[200px] w-auto max-w-[80px] sm:max-w-none'
+          alt='circle2'
         />
 
         {/* Background Outline Text */}
         <img
           src='/Images/secure.png'
           alt='securend-bg'
-          className='absolute left-1 top-60 md:top-80 w-[300px] md:w-[450px] h-[200px] md:h-[300px] pointer-events-none select-none'
+          className='absolute left-1 top-[40%] md:top-[50%] w-[250px] md:w-[450px] h-[150px] md:h-[300px] pointer-events-none select-none'
         />
 
-        <div className='grid grid-cols-1 md:grid-cols-2 items-center relative z-10'>
-          <div className='z-10 mb-12 md:mb-20 space-y-6 px-2 md:px-0'>
-            <h1 className='text-3xl md:text-5xl font-extrabold leading-tight'>
-              AI Powered Risk <br /> Prioritization and <br /> Remediation
+        {/* Main Grid Content */}
+        <div className='grid grid-cols-1 md:grid-cols-2 items-center min-h-[80vh] relative z-10 gap-12'>
+          {/* Left Side: Text */}
+          <div className='space-y-6 px-2 sm:px-4'>
+            <h1 className='text-3xl sm:text-4xl md:text-5xl font-extrabold leading-tight'>
+              AI-Powered Risk <br /> Prioritization and <br /> Remediation
               Platform
             </h1>
             <p className='text-base md:text-lg text-[#bcbcd7] leading-relaxed max-w-xl'>
-              Enhance security with our intelligent AI-driven platform that
+              Enhance security with our intelligent, AI-driven platform that
               identifies, prioritizes, and remediates risks efficiently.
               Streamline threat management, reduce vulnerabilities, and
               safeguard your business with actionable insights and automated
@@ -85,23 +90,23 @@ const Landing = () => {
             </button>
           </div>
 
-          {/* Right Side: 3 Layered Images */}
-          <div className='relative top-10 md:top-20 w-full md:w-[480px] md:mt-0 flex justify-center md:justify-end ml-0 md:ml-40'>
-            <div className='relative w-full max-w-sm md:max-w-2xl h-[400px] md:h-[600px]'>
+          {/* Right Side: Responsive Stacked Images */}
+          <div className='relative flex justify-center md:justify-end w-full h-full items-center'>
+            <div className='relative w-full max-w-[300px] sm:max-w-md md:max-w-xl h-[320px] sm:h-[420px] md:h-[520px]'>
               <img
                 src='/Images/module3.png'
                 alt='dashboard 3'
-                className='absolute top-0 right-10 w-[80%] md:w-[90%] rounded-xl shadow-lg z-10'
+                className='absolute top-0 right-6 w-[85%] sm:w-[90%] rounded-xl shadow-lg z-10'
               />
               <img
                 src='/Images/module2.png'
                 alt='dashboard 2'
-                className='absolute top-10 right-5 w-[80%] md:w-[90%] rounded-xl shadow-lg z-20'
+                className='absolute top-8 right-3 w-[85%] sm:w-[90%] rounded-xl shadow-lg z-20'
               />
               <img
                 src='/Images/module1.png'
                 alt='dashboard 1'
-                className='absolute top-20 right-0 w-[80%] md:w-[90%] rounded-xl shadow-lg z-30'
+                className='absolute top-16 right-0 w-[85%] sm:w-[90%] rounded-xl shadow-lg z-30'
               />
             </div>
           </div>
@@ -109,7 +114,7 @@ const Landing = () => {
       </div>
 
       {/* Sliders Section */}
-      <section className='relative flex flex-col md:flex-row min-h-[70vh] w-full bg-[#0F0F1A] text-white overflow-hidden'>
+      <section className='relative flex flex-col md:flex-row min-h-[60vh] w-full bg-[#212325] text-white overflow-hidden'>
         <img
           src='/Images/Vector2.png'
           alt='Background'
@@ -119,7 +124,7 @@ const Landing = () => {
         <div className='w-full md:w-1/2 relative z-10 flex items-center px-4 sm:px-6 md:px-12 py-12 md:py-20 text-center md:text-left'>
           <div className='max-w-[520px] mx-auto'>
             <h1 className='text-2xl sm:text-3xl md:text-5xl 2xl:text-4xl font-extrabold mb-4 leading-tight'>
-              Risk Operations Centre:
+              Risk Operations Centre
             </h1>
             <p className='text-sm sm:text-base text-[#d6d4ce] mb-6 leading-relaxed'>
               Aggregation, integrated & Orchestrated risk management across all
@@ -143,43 +148,116 @@ const Landing = () => {
       </section>
 
       {/* Features Section */}
-      <section className='relative bg-gradient-to-r from-[#22242f] via-[#252643] to-[#21232c] text-gray-300 font-light py-16 md:py-20 min-h-[100vh] overflow-hidden'>
+      <section className='relative bg-gradient-to-r from-[#22242f] via-[#252643] to-[#21232c] text-gray-300 min-h-[90vh] font-light py-16 md:py-24 overflow-hidden'>
+        {/* Background Ellipse */}
         <img
           src='/Images/Ellipse.png'
           alt='circle'
           className='absolute left-0 top-[10px] w-72 md:w-[500px] z-0'
         />
 
-        <div className='max-w-screen-xl mx-auto px-4 relative z-10 flex flex-col md:flex-row items-center gap-10 md:gap-16'>
-          <div className='w-full md:w-[40%]'>
+        <div className='max-w-screen-xl mx-auto px-4 relative z-10 flex flex-col md:flex-row items-center md:items-start gap-16'>
+          {/* Left Illustration */}
+          <div className='w-full md:w-[45%] flex justify-center md:justify-start'>
             <img
               src='/Images/features.png'
               alt='Dashboard Illustration'
-              className='w-full max-w-xs md:max-w-[400px] mx-auto'
+              className='w-full max-w-xs mt-10 md:max-w-[400px] md:ml-40'
             />
           </div>
 
-          <div className='w-full md:w-[60%]'>
-            <div className='relative flex items-center justify-start mb-4 md:mb-6'>
-              <img
-                src='/Images/key.png'
-                alt='key'
-                className='absolute left-0 top-[10%] -translate-y-1/2 w-20 md:w-32 z-0 h-10 md:h-14'
-              />
-              <h2 className='relative z-10 text-2xl md:text-4xl font-bold text-white'>
-                FEATURES
-              </h2>
-            </div>
-            <p className='text-gray-400 font-semibold mb-6 md:mb-10 text-base md:text-lg leading-relaxed max-w-xl'>
-              SECURE& platform offers key features that set them apart from
-              competitors, providing unique solutions to address real-time
-              challenges faced by enterprises of all sizes, from small
-              businesses to large corporations.
-            </p>
+          {/* Right Content */}
+          <div className='w-full md:w-[55%]'>
+            {/* Heading */}
+            <div className='flex flex-col md:flex-row items-start gap-6 md:gap-10'>
+              {/* Left Title Block */}
+              <div className='flex items-center space-x-4 min-w-fit'>
+                <div className='relative'>
+                  <img
+                    src='/Images/key.png'
+                    alt='key'
+                    className='absolute left-0 mt-2 top-1/2 -translate-y-1/2 w-20 md:w-32 h-10 md:h-14 z-0'
+                  />
+                  <h2 className='relative z-10 mt-16 text-2xl md:text-4xl font-bold text-white'>
+                    FEATURES
+                  </h2>
+                </div>
 
-            <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4'>
-              {/* Feature cards already responsive */}
-              {/* No change needed */}
+                {/* Vertical Divider */}
+                <div className='h-20 border-l mt-10 border-gray-600 ml-2' />
+              </div>
+
+              {/* Paragraph */}
+              <p className='text-gray-400 mt-8 font-medium text-sm md:text-base leading-relaxed max-w-2xl'>
+                SECUREND platform offers key features that set them apart from
+                competitors, providing unique solutions to address real-time
+                challenges faced by enterprises of all sizes, from small
+                businesses to large corporations.
+              </p>
+            </div>
+
+            {/* Cards */}
+            <div className='grid grid-cols-1 sm:grid-cols-2 mt-20 md:grid-cols-3 gap-6'>
+              {/* Card 1 */}
+              <div className='bg-gradient-to-r from-[#252c45] to-[#2b314c] border border-[#2F3147] hover:shadow-2xl hover:scale-[1.02] transition-all duration-300 rounded-2xl p-6 text-white shadow-md'>
+                <div className='mb-4'>
+                  <div className='w-12 h-12 flex items-center justify-center rounded-lg'>
+                    <img
+                      src='/Icons/icon1.png'
+                      alt='icon'
+                      className='w-10 h-10'
+                    />
+                  </div>
+                </div>
+                <h3 className='text-lg font-semibold mb-2'>
+                  Unified Asset Inventory
+                </h3>
+                <p className='text-gray-400 text-sm leading-relaxed'>
+                  Consolidation and contextualization of all your assets within
+                  your organization to provide a single attack surface.
+                </p>
+              </div>
+
+              {/* Card 2 */}
+              <div className='bg-gradient-to-r from-[#252c45] to-[#2b314c] border border-[#2F3147] hover:shadow-2xl hover:scale-[1.02] transition-all duration-300 rounded-2xl p-6 text-white shadow-md'>
+                <div className='mb-4'>
+                  <div className='w-12 h-12 flex items-center justify-center rounded-lg'>
+                    <img
+                      src='/Icons/icon2.png'
+                      alt='icon'
+                      className='w-10 h-10'
+                    />
+                  </div>
+                </div>
+                <h3 className='text-lg font-semibold mb-2'>
+                  Aggregated Findings
+                </h3>
+                <p className='text-gray-400 text-sm leading-relaxed'>
+                  Normalization, correlation and enrichment of vulnerabilities
+                  across all the technologies to provide actionable insights.
+                </p>
+              </div>
+
+              {/* Card 3 */}
+              <div className='bg-gradient-to-r from-[#252c45] to-[#2b314c] border border-[#2F3147] hover:shadow-2xl hover:scale-[1.02] transition-all duration-300 rounded-2xl p-6 text-white shadow-md'>
+                <div className='mb-4'>
+                  <div className='w-12 h-12 flex items-center justify-center rounded-lg'>
+                    <img
+                      src='/Icons/icon3.png'
+                      alt='icon'
+                      className='w-10 h-10'
+                    />
+                  </div>
+                </div>
+                <h3 className='text-lg font-semibold mb-2'>
+                  Risk Orchestration
+                </h3>
+                <p className='text-gray-400 text-sm leading-relaxed'>
+                  Customized Risk Scoring, Prioritization, Risk Workflows &
+                  Reporting to help CIOs & CFOs with Risk Quantification metrics
+                  and bridge the gap through the CISO lens.
+                </p>
+              </div>
             </div>
           </div>
         </div>
@@ -193,7 +271,7 @@ const Landing = () => {
               Business <br /> Alignment
             </h2>
             <p className='text-gray-400 text-sm md:text-base'>
-              Secure& alignment for CIO & <br /> CFO from CISO’s lens
+              Securend alignment for CIO & <br /> CFO from CISO’s lens
             </p>
           </div>
 
@@ -227,7 +305,7 @@ const Landing = () => {
       {/* Get in Touch Section */}
       <section
         id='navigation'
-        className='min-h-[80vh] bg-gradient-to-r from-[#252748] via-[#222434] to-[#232431] text-gray-300 font-light px-4 md:px-8 py-12 md:py-16'
+        className='min-h-[60vh] bg-gradient-to-r from-[#252748] via-[#222434] to-[#232431] text-gray-300 font-light px-4 md:px-8 py-12 md:py-16'
       >
         <div className='max-w-screen-xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-10'>
           <div>
@@ -299,7 +377,7 @@ const Landing = () => {
             </p>
             <hr className='border-gray-700 my-4 md:my-6' />
             <div className='flex space-x-3 md:space-x-4'>
-              {[FaTwitter, FaLinkedinIn].map((Icon, i) => (
+              {[SiX, FaLinkedinIn].map((Icon, i) => (
                 <a
                   key={i}
                   href='#'

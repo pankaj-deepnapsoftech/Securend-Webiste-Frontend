@@ -5,11 +5,14 @@ const RiskOperationsSection = () => {
     <div>
       {/* Hero Section */}
       <section className='relative min-h-[600px] bg-gradient-to-r from-[#25264c] to-[#232432] text-white py-16 px-4 md:py-24 md:px-10 overflow-hidden'>
-        <img
-          src='/Images/roc1.png'
-          alt='ROC Highlight Box'
-          className='absolute top-32 md:top-100 left-1/2 transform -translate-x-1/2 w-[95%] md:w-[80%] max-w-5xl z-10'
-        />
+        <div className='absolute top-32 md:top-40 left-1/2 transform -translate-x-1/2 z-10 w-[95%] md:w-[80%] max-w-5xl'>
+          <div className='bg-gradient-to-l from-[#242c5e] to-[#242d61] border border-[#293e81] rounded-lg px-6 py-5 text-center text-sm md:text-base mt-60 font-medium text-white'>
+            <span className=' text-gray-300'>
+              It also serves to elevate proactive security to be on par with
+              detection and response strategies represented by the SOC.
+            </span>
+          </div>
+        </div>
 
         <div className='relative z-20 text-center max-w-4xl mx-auto px-4'>
           <h2 className='text-2xl md:text-5xl font-bold leading-snug'>
@@ -47,6 +50,7 @@ const RiskOperationsSection = () => {
         </div>
 
         <section className='relative mx-auto border border-gray-700 rounded-2xl bg-[#232842] text-white py-10 px-4 w-full max-w-[95%] md:max-w-[1000px]'>
+          {/* Heading */}
           <div className='text-center mb-6'>
             <h2 className='text-xl md:text-4xl font-bold text-white mb-1'>
               Risk Operations Center
@@ -56,9 +60,10 @@ const RiskOperationsSection = () => {
             </p>
           </div>
 
-          <div className='max-w-7xl mx-auto flex flex-col md:flex-row justify-center items-start relative gap-6'>
+          {/* Two Columns: ROC and SOC */}
+          <div className='max-w-7xl mx-auto flex flex-col md:flex-row justify-center items-start md:items-center relative gap-10'>
             {/* Left (Green) Side */}
-            <div className='flex-1 flex flex-col items-center gap-2'>
+            <div className='flex-1 flex flex-col items-center gap-4'>
               <img
                 src='/Images/green1.png'
                 alt='ROC Icon'
@@ -67,27 +72,27 @@ const RiskOperationsSection = () => {
               <img
                 src='/Images/green2.png'
                 alt='Risk Operations Center'
-                className='w-[70%] md:w-auto'
+                className='w-[90%] md:w-auto'
               />
               <img
                 src='/Images/green3.png'
                 alt='Risk-Based Prioritization'
-                className='w-[70%] md:w-auto'
+                className='w-[90%] md:w-auto'
               />
               <img
                 src='/Icons/greenarrow1.png'
                 alt='Arrow Down 1'
-                className='w-6'
+                className='w-5 md:w-6'
               />
               <img
                 src='/Images/green4.png'
                 alt='Indicators of Exposure'
-                className='w-[70%] md:w-auto'
+                className='w-[90%] md:w-auto'
               />
               <img
                 src='/Icons/greenarrow2.png'
                 alt='Green Side Arrow'
-                className='w-6'
+                className='w-5 md:w-6'
               />
             </div>
 
@@ -101,7 +106,7 @@ const RiskOperationsSection = () => {
             </div>
 
             {/* Right (Blue) Side */}
-            <div className='flex-1 flex flex-col items-center gap-2'>
+            <div className='flex-1 flex flex-col items-center gap-4'>
               <img
                 src='/Images/blue1.png'
                 alt='SOC Icon'
@@ -110,46 +115,49 @@ const RiskOperationsSection = () => {
               <img
                 src='/Images/blue2.png'
                 alt='Security Operations Center'
-                className='w-[70%] md:w-auto'
+                className='w-[90%] md:w-auto'
               />
               <img
                 src='/Images/blue3.png'
                 alt='Threat Detection'
-                className='w-[70%] md:w-auto'
+                className='w-[90%] md:w-auto'
               />
               <img
                 src='/Icons/greenarrow1.png'
                 alt='Arrow Down 1'
-                className='w-6'
+                className='w-5 md:w-6'
               />
               <img
                 src='/Images/blue4.png'
                 alt='Indicators of Compromise'
-                className='w-[70%] md:w-auto'
+                className='w-[90%] md:w-auto'
               />
               <img
                 src='/Icons/greenarrow2.png'
                 alt='Arrow Down 1'
-                className='w-6'
+                className='w-5 md:w-6'
               />
             </div>
           </div>
 
-          <div className='relative -top-10 md:-top-16 w-full max-w-[95%] mx-auto'>
+          {/* Proactive/Reactive Section Image */}
+          <div className='relative -top-8 md:-top-16 w-full max-w-[95%] mx-auto'>
             <img
               src='/Images/proactive.png'
               className='w-full object-contain'
+              alt='Proactive Diagram'
             />
           </div>
 
-          <div className='flex flex-col md:flex-row justify-center items-center gap-4 md:gap-10 text-xs md:text-sm mt-4'>
+          {/* Legend */}
+          <div className='flex flex-col md:flex-row justify-center items-center gap-3 md:gap-10 text-xs md:text-sm mt-6 md:mt-8'>
             <div className='flex items-center gap-2'>
               <img
                 src='/Icons/greenarrow.png'
                 alt='Proactive'
                 className='w-3 h-3'
               />
-              <span className='text-green-600'>Proactive Prevention</span>
+              <span className='text-green-500'>Proactive Prevention</span>
             </div>
             <div className='flex items-center gap-2'>
               <img
@@ -157,7 +165,7 @@ const RiskOperationsSection = () => {
                 alt='Reactive'
                 className='w-3 h-3 transform rotate-180'
               />
-              <span className='text-sky-600'>Reactive Detection</span>
+              <span className='text-sky-400'>Reactive Detection</span>
             </div>
           </div>
         </section>
@@ -184,7 +192,7 @@ const RiskOperationsSection = () => {
         <div className='text-center px-4 py-10'>
           <div className='flex items-center justify-center gap-2 mb-3 md:mb-5 text-white text-xl md:text-3xl font-bold'>
             <img src='/Icons/icon14.png' className='w-6 h-6 md:w-8 md:h-8' />
-            <span>Risk Operations Centre</span>
+            <span>Risk Operations Center</span>
           </div>
           <p className='text-gray-300 text-xs md:text-base'>
             AI Powered & Human Consulted Remediation to Zero Down Your Risk

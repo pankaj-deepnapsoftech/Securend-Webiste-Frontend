@@ -1,5 +1,6 @@
 import React from 'react';
-import { FaLinkedinIn, FaTwitter } from 'react-icons/fa';
+import { FaLinkedinIn } from 'react-icons/fa';
+import { SiX } from 'react-icons/si';
 
 const Footer = () => {
   return (
@@ -61,20 +62,20 @@ const Footer = () => {
         </div>
 
         {/* Column 4: Contact */}
-        <div>
+        <div className='w-70'>
           <h4 className='text-gray-200 font-medium mb-3'>Contact Us</h4>
           <p className='text-sm mb-2'>
             <strong>Call Us:</strong> +91 9205404075
           </p>
-          <p className='text-sm'>
+          <p className='text-sm mb-2'>
             <strong>Mail Us:</strong> enquiry@securend.ai
           </p>
         </div>
 
         {/* Column 5: Social */}
         <div className='sm:col-span-2 md:col-span-1'>
-          <h4 className='text-gray-200 font-medium mb-3'>Social</h4>
-          <div className='flex space-x-4'>
+          <h4 className='text-gray-200 font-medium ml-10 mb-3'>Social</h4>
+          <div className='flex ml-10 space-x-4'>
             {/* Twitter */}
             <a
               href='#'
@@ -82,7 +83,7 @@ const Footer = () => {
             >
               <span className='absolute inset-0 bg-[linear-gradient(305deg,#225cd2_50%,#2B4A77_50%,#307bfe_100%)] opacity-100 transition-opacity duration-300 hover:opacity-90'></span>
               <span className='relative z-10'>
-                <FaTwitter />
+                <SiX className='text-white' />
               </span>
             </a>
 
@@ -110,7 +111,7 @@ const Footer = () => {
             <a href='#' className='hover:text-gray-200'>
               Privacy Policy
             </a>
-            |
+            <span className=' text-gray-400'>|</span>
             <a href='#' className='hover:text-gray-200'>
               Terms and Conditions
             </a>

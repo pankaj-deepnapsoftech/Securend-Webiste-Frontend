@@ -89,13 +89,21 @@ export default function IntegrationPage() {
           </div>
 
           <div className='flex items-center gap-3 w-full sm:w-auto'>
-            <AiOutlineFilter className='text-gray-400' />
-            <select className='bg-transparent text-white text-sm outline-none w-full sm:w-auto'>
-              <option>All</option>
-              <option>Popular</option>
-              <option>Recent</option>
+            <AiOutlineFilter className='text-gray-400 text-xl' />
+
+            <select
+              className='bg-slate-800 text-gray-400 text-sm outline-none px-3 py-2 rounded-md w-full sm:w-[160px]'
+              required
+            >
+              <option value='' disabled selected>
+                Select
+              </option>
+              <option value='all'>All</option>
+              <option value='popular'>Popular</option>
+              <option value='recent'>Recent</option>
             </select>
-            <MdViewModule className='text-gray-400 hidden sm:block' />
+
+            <MdViewModule className='text-gray-400 text-xl hidden sm:block' />
           </div>
         </div>
       </section>
