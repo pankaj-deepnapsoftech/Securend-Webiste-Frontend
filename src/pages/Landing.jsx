@@ -1,9 +1,18 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import { FaLinkedinIn, FaTwitter } from 'react-icons/fa';
 import { useLocation } from 'react-router-dom';
 
 const Landing = () => {
   const location = useLocation();
+
+  const [currentSlide, setCurrentSlide] = useState(0);
+
+  const sliderImages = [
+    { src: '/Images/module1.png', alt: 'Risk Management Dashboard 1' },
+    { src: '/Images/module2.png', alt: 'Risk Management Dashboard 2' },
+    { src: '/Images/module3.png', alt: 'Risk Management Dashboard 3' },
+    { src: '/Images/Slider1.png', alt: 'Risk Management Dashboard 4' },
+  ];
 
   const features = [
     {
@@ -42,6 +51,14 @@ const Landing = () => {
       }
     }
   }, [location]);
+
+  useEffect(() => {
+    const timer = setInterval(() => {
+      setCurrentSlide((prevSlide) => (prevSlide + 1) % sliderImages.length);
+    }, 3000);
+
+    return () => clearInterval(timer);
+  }, [sliderImages.length]);
 
   return (
     <div>
@@ -109,11 +126,11 @@ const Landing = () => {
       </div>
 
       {/* Sliders Section */}
-      <section className='relative flex flex-col md:flex-row min-h-[70vh] w-full bg-[#0F0F1A] text-white overflow-hidden'>
+      <section className='relative flex flex-col md:flex-row min-h-[50vh] w-full bg-[#0F0F1A] text-white overflow-hidden'>
         <img
-          src='/Images/Vector2.png'
+          src='/Images/Vector3 copy.png'
           alt='Background'
-          className='absolute bottom-0 object-cover object-bottom-left z-0 h-40 sm:h-[50%] md:h-[80%] 2xl:h-[100%]'
+          className='absolute inset-0 w-full h-full object-cover z-0'
         />
 
         <div className='w-full md:w-1/2 relative z-10 flex items-center px-4 sm:px-6 md:px-12 py-12 md:py-20 text-center md:text-left'>
@@ -133,12 +150,40 @@ const Landing = () => {
           </div>
         </div>
 
-        <div className='w-full md:w-1/2 flex items-center justify-center px-4 sm:px-6 py-10 z-10'>
-          <img
-            src='/Images/Slider1.png'
-            alt='Dashboard Preview'
-            className='w-full max-w-[90%] md:max-w-[850px] rounded-[20px] md:rounded-[30px] shadow-2xl object-contain'
-          />
+        <div className='w-full md:w-1/2 flex items-center justify-center px-2 sm:px-4 py-10 z-10'>
+          <div className='relative w-full max-w-[98%] md:max-w-[1100px] flex items-center'>
+            <div className='relative flex-1 overflow-hidden rounded-[20px] md:rounded-[30px] shadow-2xl'>
+              {sliderImages.map((image, index) => (
+                <img
+                  key={index}
+                  src={image.src}
+                  alt={image.alt}
+                  className={`w-full h-auto object-contain transition-all duration-500 ease-in-out ${
+                    index === currentSlide
+                      ? 'opacity-100 transform translate-x-0'
+                      : 'opacity-0 transform translate-x-full absolute top-0 left-0'
+                  }`}
+                />
+              ))}
+            </div>
+
+            <div className='ml-6 md:ml-12 flex flex-col items-start justify-center flex-shrink-0'>
+              <div className='flex flex-col space-y-3'>
+                {sliderImages.map((_, index) => (
+                  <div
+                    key={index}
+                    className={`transition-all duration-300 font-mono leading-none ${
+                      index === currentSlide
+                        ? 'text-white text-4xl md:text-6xl font-light opacity-100'
+                        : 'text-gray-500 text-2xl md:text-4xl font-light opacity-60'
+                    }`}
+                  >
+                    {(index + 1).toString().padStart(2, '0')}
+                  </div>
+                ))}
+              </div>
+            </div>
+          </div>
         </div>
       </section>
 
