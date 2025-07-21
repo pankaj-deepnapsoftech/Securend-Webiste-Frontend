@@ -179,8 +179,8 @@ const Landing = () => {
                     key={index}
                     className={`transition-all duration-300 font-mono leading-none ${
                       index === currentSlide
-                        ? 'text-white text-4xl md:text-6xl font-light opacity-100'
-                        : 'text-gray-500 text-2xl md:text-4xl font-light opacity-60'
+                        ? 'text-white text-xl md:text-5xl font-light opacity-100'
+                        : 'text-gray-500 text-xl md:text-4xl font-light opacity-60'
                     }`}
                   >
                     {(index + 1).toString().padStart(2, '0')}
