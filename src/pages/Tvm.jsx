@@ -103,13 +103,12 @@ export default function ThreatVulnerabilitySection() {
           {/* Card 1: Threat Management */}
           <div className='w-full md:w-1/2 bg-[#1D1F3C] text-white p-6 rounded-2xl shadow-lg border border-sky-900'>
             <div className='flex items-start gap-4'>
-             
-                <img
-                  src='/Icons/tvm1.png'
-                  alt='Threat Icon'
-                  className='w-10 h-10'
-                />
-          
+              <img
+                src='/Icons/tvm1.png'
+                alt='Threat Icon'
+                className='w-10 h-10'
+              />
+
               <div>
                 <h3 className='text-xl font-bold mb-2'>Threat Management</h3>
                 <p className='text-sm text-gray-400'>
@@ -124,13 +123,12 @@ export default function ThreatVulnerabilitySection() {
           {/* Card 2: Vulnerability Management */}
           <div className='w-full md:w-1/2 bg-[#1D1F3C] text-white p-6 rounded-2xl shadow-lg border border-sky-900'>
             <div className='flex items-start gap-4'>
-            
-                <img
-                  src='/Icons/tvm2.png'
-                  alt='Vulnerability Icon'
-                  className='w-10 h-10'
-                />
-      
+              <img
+                src='/Icons/tvm2.png'
+                alt='Vulnerability Icon'
+                className='w-10 h-10'
+              />
+
               <div>
                 <h3 className='text-xl font-bold mb-2'>
                   Vulnerability Management
@@ -227,7 +225,7 @@ export default function ThreatVulnerabilitySection() {
                 <div className='w-full flex justify-center'>
                   <div
                     className={`flex items-center gap-4 w-full max-w-4xl flex-col md:${
-                      isLeft ? 'flex-row-reverse' : 'flex-row'
+                      isLeft ? ' flex-row flex-row-reverse' : 'flex-row'
                     }`}
                   >
                     {/* Circle */}

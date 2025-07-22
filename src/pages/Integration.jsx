@@ -232,16 +232,16 @@ export default function IntegrationPage() {
         </p>
         <div className='flex flex-col sm:flex-row justify-center gap-3 sm:gap-4'>
           <button className='group bg-[#3B4FE2] hover:bg-[#3244c6] text-white font-semibold text-xs sm:text-sm md:text-base px-5 sm:px-6 py-2.5 sm:py-3 rounded-lg transition-all duration-300 inline-flex items-center'>
-              <span>Request Integration</span>
-              <span className='ml-2 transform transition-transform duration-300 group-hover:translate-x-1'>
-                →
-              </span>
-            </button>
+            <span>Request Integration</span>
+            <span className='ml-2 transform transition-transform duration-300 group-hover:translate-x-1'>
+              →
+            </span>
+          </button>
 
           <button className='group text-white border border-gray-500 font-medium px-5 duration-300 inline-flex py-2 rounded-md transition-all items-center justify-center gap-2'>
             View Documentation
-             <span className='ml-2 transform transition-transform duration-300 group-hover:translate-x-1'>
-            <FiExternalLink className='w-4 h-4' />
+            <span className='ml-2 transform transition-transform duration-300 group-hover:translate-x-1'>
+              <FiExternalLink className='w-4 h-4' />
             </span>
           </button>
         </div>
