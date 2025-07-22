@@ -1,6 +1,7 @@
 'use client';
 
 import React from 'react';
+import { HiArrowRight, HiArrowDown } from 'react-icons/hi';
 
 const cardImages = [
   'tvm4.png',
@@ -16,45 +17,64 @@ const cardImages = [
 const processSteps = [
   {
     id: 1,
-    circle: '/Images/tvmcircle1.png',
-    arrow: '/Icons/arrow1.png',
-    card: '/Images/process1.png',
-    align: 'left',
+    title: 'Planning',
+    description: 'Define scope, tools, team roles, and update cadence.',
+    number: '01',
+    direction: 'right',
+    bgColor: 'from-[#2CA7DD] to-[#207FE7]',
+    arrow: '→',
+    icon: '/Icons/process1.png',
   },
   {
     id: 2,
-    circle: '/Images/tvmcircle2.png',
-    arrow: '/Icons/arrow2.png',
-    card: '/Images/process2.png',
-    align: 'right',
+    title: 'Discovery',
+    description: 'Identify assets and vulnerabilities continuously.',
+    number: '02',
+    direction: 'left',
+    bgColor: 'from-[#EC4899] to-[#DB2777]',
+    arrow: '←',
+    icon: '/Icons/process2.png',
   },
   {
     id: 3,
-    circle: '/Images/tvmcircle3.png',
-    arrow: '/Icons/arrow3.png',
-    card: '/Images/process3.png',
-    align: 'left',
+    title: 'Prioritization',
+    description: 'Score vulnerabilities using CVSS, MITRE, exploit data.',
+    number: '03',
+    direction: 'right',
+    bgColor: 'from-[#F97316] to-[#EA580C]',
+    arrow: '→',
+    icon: '/Icons/process3.png',
   },
   {
     id: 4,
-    circle: '/Images/tvmcircle4.png',
-    arrow: '/Icons/arrow4.png',
-    card: '/Images/process4.png',
-    align: 'right',
+    title: 'Remediation',
+    description: 'Apply patches, configs, virtual fixes; retest to confirm.',
+    number: '04',
+    direction: 'left',
+    bgColor: 'from-[#22C55E] to-[#16A34A]',
+    arrow: '←',
+    icon: '/Icons/process4.png',
   },
   {
     id: 5,
-    circle: '/Images/tvmcircle5.png',
-    arrow: '/Icons/arrow5.png',
-    card: '/Images/process5.png',
-    align: 'left',
+    title: 'Monitoring',
+    description: 'Use SIEM/EDR, asset monitoring to catch emerging threats.',
+    number: '05',
+    direction: 'right',
+    bgColor: 'from-[#60A5FA] to-[#3B82F6]',
+    arrow: '→',
+    icon: '/Icons/process5.png',
   },
   {
     id: 6,
-    circle: '/Images/tvmcircle6.png',
-    arrow: '/Icons/arrow6.png',
-    card: '/Images/process6.png',
-    align: 'right',
+    title: 'Review',
+    description:
+      'Analyze metrics/report; refine policies and resource allocation.',
+    number: '06',
+    direction: 'left',
+    bgColor: 'from-[#EF4444] to-[#DC2626]',
+    arrow: '←',
+    icon: '/Icons/process6.png',
   },
 ];
 
@@ -80,24 +100,60 @@ export default function ThreatVulnerabilitySection() {
         </div>
 
         <div className='flex flex-col md:flex-row gap-6 justify-center items-center w-full max-w-6xl mb-6 px-4'>
-          <img
-            src='/Images/tvm1.png'
-            alt='Threat Management'
-            className='w-full md:w-1/2 rounded-xl shadow-lg object-contain'
-          />
-          <img
-            src='/Images/tvm2.png'
-            alt='Vulnerability Management'
-            className='w-full md:w-1/2 rounded-xl shadow-lg object-contain'
-          />
+          {/* Card 1: Threat Management */}
+          <div className='w-full md:w-1/2 bg-[#1D1F3C] text-white p-6 rounded-2xl shadow-lg border border-sky-900'>
+            <div className='flex items-start gap-4'>
+             
+                <img
+                  src='/Icons/tvm1.png'
+                  alt='Threat Icon'
+                  className='w-10 h-10'
+                />
+          
+              <div>
+                <h3 className='text-xl font-bold mb-2'>Threat Management</h3>
+                <p className='text-sm text-gray-400'>
+                  Focuses on understanding and countering active risks—such as
+                  phishing, malware, insider threats—through intelligence,
+                  threat hunting, and rapid response.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          {/* Card 2: Vulnerability Management */}
+          <div className='w-full md:w-1/2 bg-[#1D1F3C] text-white p-6 rounded-2xl shadow-lg border border-sky-900'>
+            <div className='flex items-start gap-4'>
+            
+                <img
+                  src='/Icons/tvm2.png'
+                  alt='Vulnerability Icon'
+                  className='w-10 h-10'
+                />
+      
+              <div>
+                <h3 className='text-xl font-bold mb-2'>
+                  Vulnerability Management
+                </h3>
+                <p className='text-sm text-gray-400'>
+                  Centers on uncovering and mitigating weaknesses—like unpatched
+                  software, misconfigurations, or zero-day flaws—by scanning,
+                  prioritizing, patching, and verifying fixes.
+                </p>
+              </div>
+            </div>
+          </div>
         </div>
 
+        {/* Blended Card */}
         <div className='w-full max-w-4xl px-4'>
-          <img
-            src='/Images/tvm3.png'
-            alt='TVM Blends Both'
-            className='w-full rounded-xl shadow-lg object-contain'
-          />
+          <div className='bg-gradient-to-br from-[#212a49] to-[#202a43] text-white p-4 rounded-xl shadow-lg border border-sky-900 text-center'>
+            <p>
+              <span className='font-bold text-gray-400'>TVM blends both</span>,
+              ensuring defenses aren't only reactive but also proactively reduce
+              exposure before threats strike.
+            </p>
+          </div>
         </div>
       </section>
 
@@ -162,57 +218,70 @@ export default function ThreatVulnerabilitySection() {
       </section>
 
       {/* Process Steps */}
-      <div className='relative flex justify-center bg-gradient-to-r from-[#272753] to-[#21232a] py-0 px-4 md:px-10 overflow-hidden'>
+      <section className='relative flex justify-center bg-gradient-to-r from-[#272753] to-[#21232a] py-16 px-4 md:px-10 overflow-hidden'>
         <div className='relative z-10 flex flex-col w-full max-w-6xl mx-auto'>
-          {processSteps.map((step) => (
-            <div key={step.id} className='flex flex-col items-center mb-6'>
-              <div
-                className={`flex items-center justify-center flex-nowrap gap-2 md:gap-4 w-full max-w-[95%] mx-auto`}
-              >
-                {step.align === 'left' ? (
-                  <>
-                    <img
-                      src={step.circle}
-                      alt={`circle-${step.id}`}
-                      className='w-10 sm:w-12 md:w-20 object-contain'
-                    />
-                    <img
-                      src={step.arrow}
-                      alt={`arrow-${step.id}`}
-                      className='w-5 sm:w-6 md:w-10 object-contain'
-                    />
-                    <img
-                      src={step.card}
-                      alt={`card-${step.id}`}
-                      className='flex-1 max-w-[250px] sm:max-w-[300px] md:max-w-[400px] object-contain'
-                    />
-                  </>
-                ) : (
-                  <>
-                    <img
-                      src={step.card}
-                      alt={`card-${step.id}`}
-                      className='flex-1 max-w-[250px] sm:max-w-[300px] md:max-w-[400px] object-contain'
-                    />
-                    <img
-                      src={step.arrow}
-                      alt={`arrow-${step.id}`}
-                      className='w-5 sm:w-6 md:w-10 rotate-180 object-contain'
-                    />
-                    <img
-                      src={step.circle}
-                      alt={`circle-${step.id}`}
-                      className='w-10 sm:w-12 md:w-20 object-contain'
-                    />
-                  </>
+          {processSteps.map((step, index) => {
+            const isLeft = step.direction === 'left';
+            return (
+              <div key={step.id} className='flex flex-col items-center w-full'>
+                <div className='w-full flex justify-center'>
+                  <div
+                    className={`flex items-center gap-4 w-full max-w-4xl flex-col md:${
+                      isLeft ? 'flex-row-reverse' : 'flex-row'
+                    }`}
+                  >
+                    {/* Circle */}
+                    <div
+                      className={`flex-shrink-0 bg-gradient-to-br ${step.bgColor} text-white font-bold text-sm w-12 h-12 md:w-16 md:h-16 flex items-center justify-center rounded-full shadow-lg`}
+                    >
+                      {step.number}
+                    </div>
+
+                    {/* Arrow */}
+                    <div
+                      className={`flex-shrink-0 w-6 h-6 md:w-10 md:h-10 rounded-lg flex items-center justify-center 
+    bg-gradient-to-br from-[#07549b] to-[#21d4fd] shadow-md ${
+      isLeft ? 'md:rotate-180' : ''
+    }`}
+                    >
+                      {/* React Icons (down on mobile, right on desktop) */}
+                      <div className='text-white text-xl md:text-2xl'>
+                        <HiArrowDown className='block md:hidden' />
+                        <HiArrowRight className='hidden md:block' />
+                      </div>
+                    </div>
+
+                    {/* Card */}
+                    <div className='flex-1 bg-gradient-to-br from-[#283251] to-[#2a3340] border border-gray-800 text-white p-4 sm:p-5 rounded-xl shadow-md w-full md:w-1/2'>
+                      {/* Icon + Title */}
+                      <div className='flex items-center gap-3 mb-2'>
+                        <img
+                          src={step.icon}
+                          alt='icon'
+                          className='w-6 h-6 sm:w-8 sm:h-8 object-contain'
+                        />
+                        <h3 className='font-semibold text-base sm:text-lg'>
+                          {step.title}
+                        </h3>
+                      </div>
+
+                      {/* Description */}
+                      <p className='text-sm text-gray-300'>
+                        {step.description}
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                {/* Vertical Divider */}
+                {index !== processSteps.length - 1 && (
+                  <div className='h-6 md:h-16 w-1 bg-gradient-to-b from-sky-800 to-purple-700'></div>
                 )}
               </div>
-
-              <img src='/Icons/line.png' alt='' />
-            </div>
-          ))}
+            );
+          })}
         </div>
-      </div>
+      </section>
 
       {/* Best Practices */}
       <section className='w-full bg-gradient-to-r from-[#252743] to-[#212326] px-4 py-20 text-white'>
@@ -227,33 +296,85 @@ export default function ThreatVulnerabilitySection() {
           </h2>
         </div>
 
-        <div className='max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-6'>
-          <img
-            src='/Images/practices1.png'
-            alt='Practice 1'
-            className='w-full rounded-xl shadow'
-          />
-          <img
-            src='/Images/practices2.png'
-            alt='Practice 2'
-            className='w-full rounded-xl shadow'
-          />
-          <img
-            src='/Images/practices3.png'
-            alt='Practice 3'
-            className='w-full rounded-xl shadow'
-          />
-          <img
-            src='/Images/practices4.png'
-            alt='Practice 4'
-            className='w-full rounded-xl shadow'
-          />
-          <div className='md:col-span-2 flex justify-center'>
+        <div className='max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-6 text-white'>
+          {/* Card 1 */}
+          <div className='flex border border-gray-700 items-start gap-4 p-6 bg-gradient-to-br from-[#252e40] to-[#2a3340] rounded-xl shadow'>
+            <img src='/Icons/icon22.png' alt='Eye Icon' className='w-10 h-10' />
+
+            <div>
+              <h3 className='font-semibold text-lg mb-1'>
+                Single Pane of Glass
+              </h3>
+              <p className='text-sm text-gray-300'>
+                Integrate scanning, risk scoring, patch tracking, and reporting.
+              </p>
+            </div>
+          </div>
+
+          {/* Card 2 */}
+          <div className='flex items-start border border-gray-700  gap-4 p-6 bg-gradient-to-br from-[#252e40] to-[#2a3340] rounded-xl shadow'>
             <img
-              src='/Images/practices5.png'
-              alt='Practice 5'
-              className='w-full rounded-xl shadow'
+              src='/Icons/icon23.png'
+              alt='Brain Icon'
+              className='w-10 h-10'
             />
+            <div>
+              <h3 className='font-semibold text-lg mb-1'>
+                Intelligence-led Prioritization
+              </h3>
+              <p className='text-sm text-gray-300'>
+                Act on real-world exploit data over theory.
+              </p>
+            </div>
+          </div>
+
+          {/* Card 3 */}
+          <div className='flex border border-gray-700  items-start gap-4 p-6 bg-gradient-to-br from-[#252e40] to-[#2a3340] rounded-xl shadow'>
+            <img
+              src='/Icons/icon24.png'
+              alt='Repeat Icon'
+              className='w-10 h-10'
+            />
+            <div>
+              <h3 className='font-semibold text-lg mb-1'>Continuous Process</h3>
+              <p className='text-sm text-gray-300'>
+                Make TVM part of your daily operations, not an annual checkbox.
+              </p>
+            </div>
+          </div>
+
+          {/* Card 4 */}
+          <div className='flex border border-gray-700  items-start gap-4 p-6 bg-gradient-to-br from-[#252e40] to-[#2a3340] rounded-xl shadow'>
+            <img
+              src='/Icons/icon25.png'
+              alt='User Group Icon'
+              className='w-10 h-10'
+            />
+            <div>
+              <h3 className='font-semibold text-lg mb-1'>Engage All Staff</h3>
+              <p className='text-sm text-gray-300'>
+                Elevate awareness and ensure accountability across the
+                organization.
+              </p>
+            </div>
+          </div>
+
+          {/* Card 5: Full width */}
+          <div className='md:col-span-2 border border-gray-700  flex items-start gap-4 p-6 bg-gradient-to-br from-[#252e40] to-[#2a3340] rounded-xl shadow'>
+            <img
+              src='/Icons/icon26.png'
+              alt='Chart Icon'
+              className='w-10 h-10'
+            />
+            <div>
+              <h3 className='font-semibold text-lg mb-1'>
+                Adaptive Program Maturity
+              </h3>
+              <p className='text-sm text-gray-300'>
+                Progress from ad-hoc to advanced models that include deeper
+                metrics and predictive insights.
+              </p>
+            </div>
           </div>
         </div>
       </section>
@@ -275,12 +396,71 @@ export default function ThreatVulnerabilitySection() {
           Secure End Platform helps you implement comprehensive TVM strategies
         </p>
 
-        <div className='flex justify-center'>
-          <img
-            src='/Images/tvmlast.png'
-            alt='Modern Solutions TVM'
-            className='w-full max-w-6xl rounded-xl shadow-lg object-contain'
-          />
+        <div className='max-w-6xl mx-auto rounded-2xl bg-gradient-to-r from-[#1F2A59] to-[#301C4D] py-10 px-6 md:px-10 shadow-xl'>
+          <div className='grid grid-cols-1 md:grid-cols-3 gap-8 text-white text-center'>
+            {/* Card 1 */}
+            <div>
+              <div className='flex justify-center mb-4'>
+                <img
+                  src='/Icons/icon19.png'
+                  alt='Asset Icon'
+                  className='w-12 h-12'
+                />
+              </div>
+              <h3 className='font-semibold text-lg mb-2'>
+                Comprehensive Asset Inventories
+              </h3>
+              <p className='text-sm text-gray-400'>
+                Build complete visibility across your entire IT infrastructure
+              </p>
+            </div>
+
+            {/* Card 2 */}
+            <div>
+              <div className='flex justify-center mb-4'>
+                <img
+                  src='/Icons/icon20.png'
+                  alt='Risk Icon'
+                  className='w-12 h-12'
+                />
+              </div>
+              <h3 className='font-semibold text-lg mb-2'>
+                Risk-Based Prioritization
+              </h3>
+              <p className='text-sm text-gray-400'>
+                Prioritize vulnerabilities using advanced risk scoring
+                algorithms
+              </p>
+            </div>
+
+            {/* Card 3 */}
+            <div>
+              <div className='flex justify-center mb-4'>
+                <img
+                  src='/Icons/icon21.png'
+                  alt='Workflow Icon'
+                  className='w-12 h-12'
+                />
+              </div>
+              <h3 className='font-semibold text-lg mb-2'>
+                Integrated Workflows
+              </h3>
+              <p className='text-sm text-gray-400'>
+                Integrate continuous scanning and penetration testing into
+                workflows
+              </p>
+            </div>
+          </div>
+
+          {/* CTA Button */}
+          <div className='flex justify-center mt-10'>
+            <button className='group bg-[#3B4FE2] hover:bg-[#3244c6] text-white font-semibold text-xs sm:text-sm md:text-base px-5 sm:px-6 py-2.5 sm:py-3 rounded-lg transition-all duration-300 inline-flex items-center'>
+              <span>Get Started with TVM </span>
+              <span className='ml-2 transform transition-transform duration-300 group-hover:translate-x-1'>
+                →
+              </span>
+            </button>
+          </div>
         </div>
       </section>
     </div>

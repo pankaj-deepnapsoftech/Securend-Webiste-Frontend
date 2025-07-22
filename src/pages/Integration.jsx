@@ -231,13 +231,18 @@ export default function IntegrationPage() {
           your use case or reach out to our team.
         </p>
         <div className='flex flex-col sm:flex-row justify-center gap-3 sm:gap-4'>
-          <button className='bg-gradient-to-r from-[#2859e4] to-[#3336ce] text-white font-medium px-5 py-2 rounded-md shadow hover:opacity-90 transition-all'>
-            Request Integration →
-          </button>
+          <button className='group bg-[#3B4FE2] hover:bg-[#3244c6] text-white font-semibold text-xs sm:text-sm md:text-base px-5 sm:px-6 py-2.5 sm:py-3 rounded-lg transition-all duration-300 inline-flex items-center'>
+              <span>Request Integration</span>
+              <span className='ml-2 transform transition-transform duration-300 group-hover:translate-x-1'>
+                →
+              </span>
+            </button>
 
-          <button className='text-white border border-gray-500 font-medium px-5 py-2 rounded-md transition-all flex items-center justify-center gap-2'>
+          <button className='group text-white border border-gray-500 font-medium px-5 duration-300 inline-flex py-2 rounded-md transition-all items-center justify-center gap-2'>
             View Documentation
+             <span className='ml-2 transform transition-transform duration-300 group-hover:translate-x-1'>
             <FiExternalLink className='w-4 h-4' />
+            </span>
           </button>
         </div>
       </section>
